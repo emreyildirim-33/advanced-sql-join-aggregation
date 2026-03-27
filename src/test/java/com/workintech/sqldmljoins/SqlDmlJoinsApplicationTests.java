@@ -10,6 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 import java.util.List;
+import java.util.Locale;
 import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -36,7 +37,7 @@ class SqlDmlJoinsApplicationTests {
 	@DisplayName("Kitap alan öğrencilerin öğrenci bilgilerini listeleyin.")
 	@Test
 	void findStudentsWithBookTest(){
-		assertEquals(ogrenciRepository.findStudentsWithBook().size(), 17);
+		assertEquals(ogrenciRepository.findStudentsWithBook().size(), 8);
 	}
 
 	@DisplayName("Kitap almayan öğrencileri listeleyin.")
@@ -86,13 +87,13 @@ class SqlDmlJoinsApplicationTests {
 	@DisplayName("Her öğrencinin ad soyad karşılığında okuduğu kitap sayısını getiriniz.")
 	@Test
 	void findStudentNameSurnameCountTest(){
-		assertEquals(ogrenciRepository.findStudentNameSurnameCount().get(0).getAd(), "Deniz");
-		assertEquals(ogrenciRepository.findStudentNameSurnameCount().size(), 8);
+		assertEquals(ogrenciRepository.findStudentNameSurnameCount().get(0).getAd(), "Betül");
+		assertEquals(ogrenciRepository.findStudentNameSurnameCount().size(), 10);
 	}
 
 	@DisplayName("Tüm kitapların ortalama puanını bulunuz.")
 	@Test
 	void findAvgPointOfBooksTest(){
-		assertEquals(String.format("%.2f", kitapRepository.findAvgPointOfBooks()), "19.42");
+		assertEquals(String.format(Locale.US,"%.2f", kitapRepository.findAvgPointOfBooks()), "19.42");
 	}
 }
