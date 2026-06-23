@@ -1,14 +1,14 @@
 # Advanced SQL JOIN & Aggregation
 
-An SQL practice project focused on relational database querying, JOIN operations, aggregation functions, GROUP BY usage, subqueries, and analytical query writing.
+An SQL project focused on relational database querying, JOIN operations, aggregation functions, GROUP BY usage, subqueries, and analytical query writing.
 
 The project is based on a library information system database containing students, books, authors, genres, and borrowing records.
 
 ## Overview
 
-This project was developed as a hands-on SQL and relational database practice project.
+This project was developed to strengthen relational database querying skills and demonstrate SQL reporting logic in a structured database environment.
 
-The main goal was to practice writing SQL queries that retrieve meaningful information from multiple related tables. The project focuses on JOIN logic, aggregation, grouping, filtering, and query-based reporting.
+The main goal was to write SQL queries that retrieve meaningful information from multiple related tables. The project focuses on JOIN logic, aggregation, grouping, filtering, and query-based reporting.
 
 The database simulates a school library system where students borrow books and book-related data is stored across multiple relational tables.
 
@@ -40,7 +40,7 @@ These tables represent students, borrowing transactions, books, authors, and boo
 
 ## Main Query Tasks
 
-The project includes SQL exercises such as:
+The project includes SQL scenarios such as:
 
 * Listing books by genre
 * Listing students who borrowed books
@@ -88,7 +88,7 @@ FROM kitap;
 * Using aggregation functions such as `COUNT` and `AVG`
 * Finding records with and without related data
 * Understanding many-to-one and one-to-many query patterns
-* Practicing SQL from a backend developer perspective
+* Applying SQL from a backend developer perspective
 
 ## Project Structure
 
@@ -137,8 +137,9 @@ spring.datasource.password=your_password
 
 ## Notes
 
-This project was built as a database and SQL training project.
-The main focus was not building a full library management application, but practicing SQL JOIN operations, aggregation, grouping, filtering, and relational query design.
+This project focuses on SQL JOIN operations, aggregation, grouping, filtering, and relational query design in a library database scenario.
+
+The main purpose is to demonstrate database querying ability and analytical SQL thinking rather than building a full library management application.
 
 ## Repository
 
